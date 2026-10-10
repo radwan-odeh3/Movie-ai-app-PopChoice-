@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <title>PopChoice</title>
+         <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <img src="PopChoice.png">
+            <h1>PopChoice</h1>
+        </header>
+        
+        <main>
+            <section id="form-screen">
+                <form>
+                    <div class="formInputContainer">
+                        <label for="favorite">What's your favorite movie and why?</label>
+                        <textarea placeholder=" The Shawshank Redemption &#10; Because it taught me to never give up hope no &#10; matter how hard life gets" class="textareaPlaceholder1" id="favorite"></textarea>   
+                    </div>
+                    
+                    <div class="formInputContainer">
+                        <label for="mood">Are you in the mood for something new or clasic?</label>
+                        <textarea placeholder=" I want to watch movies that were released &#10; after 1990" class="textareaPlaceholder2and3" id="mood"></textarea> 
+                    </div>
+                    
+                    <div class="formInputContainer">
+                        <label for="vibe">Do you wanna have fun or do you want something serious?</label>
+                        <textarea placeholder=" I want to watch something stupid and fun" class="textareaPlaceholder2and3" id="vibe"></textarea> 
+                    </div>
+                </form>
+            
+            
+                <button class="letsgoButton" id="submit-Btn">Let's Go</button>
+            </section>
+            
+            
+            <section id="result-screen" class="hidden">
+                <h2 id="movie-title"></h2>
+                <p id="movie-explanation"></p>
+                <button id="reset-btn" type="button" class="goAgainButton">Go Again</button>
+            </section>
+        </main>
+        <script type="module" src="index.js"></script>
+    </body>
+</html> 
